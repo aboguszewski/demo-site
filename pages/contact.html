@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> DemoSite </title>
+        <link rel="icon" href="../images/website_icon.png">
+        <link href="../output.css" rel="stylesheet">
+        <meta charset="UTF-8">
+    </head>
+    <body class="min-h-screen flex flex-col bg-gray-300 font-sans">
+        <header class="bg-blue-800 text-white text-xl">
+            <div class="flex items-center justify-between p-4 px-5">
+                <h1><a href="../index.html"> DemoSite </a></h1>
+                <nav aria-label="header navigation">
+                    <ul class="flex flex-row gap-x-6">
+                        <li><a class="hover:text-gray-200" href="../index.html"> Home </a></li>
+                        <li><a class="hover:text-gray-200" href="about_us.html"> About Us </a></li>
+                        <li><a class="hover:text-gray-200" href="facts.html"> Facts </a></li>
+                        <li><a class="hover:text-gray-200" href="contact.html"> Contact </a></li>
+                    </ul>
+                </nav>
+        </header>
+        <section class="flex flex-col flex-grow bg-white p-6 m-2 rounded-md shadow-md">
+            <h2 class="text-2xl font-semibold text-center text-blue-800 mb-3">Want to join the common cause? Reach out!</h2>
+            <p class="text-gray-700 text-center mb-6">
+                The more, the merrier! Let's find something for you in one of our locations, or perhaps you could start our operations in a new country?
+            </p>
+            <form class="max-w-lg mx-auto bg-gray-100 mt-6 p-6 rounded-lg shadow" autocomplete="off">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="name" class="block text-gray-600 font-medium">Name</label>
+                        <input type="text" id="name" name="name" required 
+                            class="w-full px-4 py-2 mt-1 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                    </div>
+                    <div>
+                        <label for="surname" class="block text-gray-600 font-medium">Surname</label>
+                        <input type="text" id="surname" name="surname" required 
+                            class="w-full px-4 py-2 mt-1 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <label for="email" class="block text-gray-600 font-medium">Email</label>
+                    <input type="email" id="email" name="email" required 
+                        class="w-full px-4 py-2 mt-1 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                </div>
+                <div class="mt-4">
+                    <label for="country" class="block text-gray-600 font-medium">Your country</label>
+                    <select id="country" name="country" required 
+                        class="w-full px-4 py-2 mt-1 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                        <option value="">--Please choose a country--</option>
+                        <option value="czech_republic">Czech Republic</option>
+                        <option value="france">France</option>
+                        <option value="germany">Germany</option>
+                        <option value="lithuania">Lithuania</option>
+                        <option value="norway">Norway</option>
+                        <option value="poland">Poland</option>
+                        <option value="turkey">Turkey</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="mt-4">
+                    <label for="message" class="block text-gray-600 font-medium">Leave us a message</label>
+                    <textarea id="message" name="message" rows="4" required
+                        class="w-full px-4 py-2 mt-1 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"></textarea>
+                </div>
+                <button type="submit"
+                    class="w-full mt-6 bg-blue-800 text-white font-semibold py-2 rounded-md hover:bg-blue-700 transition duration-300">
+                    Send
+                </button>
+            </form>
+        </section>        
+        <footer class="bg-blue-800 text-white text-sm p-3 mt-auto">
+            <div class="flex items-center justify-between">
+                <nav aria-label="footer navigation">
+                    <ul class="flex flex-row gap-x-5">
+                        <li><a class="hover:text-gray-200" href="../index.html"> Home </a></li>
+                        <li><a class="hover:text-gray-200" href="about_us.html"> About Us </a></li>
+                        <li><a class="hover:text-gray-200" href="facts.html"> Facts </a></li>
+                        <li><a class="hover:text-gray-200" href="contact.html"> Contact </a></li>
+                    </ul>
+                </nav>
+                <p> 🅮 DemoSite is in the Public Domain 🅮 </p>
+            </div>
+        </footer>
+    </body>
+</html>
